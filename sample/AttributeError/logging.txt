@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/AttributeError/logging.py", line 1, in <module>
+    import logging
+  File "/home/sano_anju/errlocator/sample/AttributeError/logging.py", line 4, in <module>
+    logger = logging.getLogger(__name__)
+             ^^^^^^^^^^^^^^^^^
+AttributeError: partially initialized module 'logging' has no attribute 'getLogger' (most likely due to a circular import)

@@ -1,0 +1,6 @@
+{
+    "rule_json"   : "opt/rule.json",
+    "compiler"    : "python3",
+    "debug_mode"  : "False",
+    "display_err" : "False"
+  }

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/01/sample/TypeError/t07.py", line 2, in <module>
+    a = 1 + float(x, 1)
+            ^^^^^^^^^^^
+TypeError: float expected at most 1 argument, got 2

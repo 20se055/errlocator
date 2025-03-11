@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/TypeError/t01.py", line 29, in <module>
+    judge(x, y)
+  File "/home/sano_anju/errlocator/sample/TypeError/t01.py", line 6, in judge
+    print("\nあなたの手:{}".format(hand[x]))
+                              ~~~~^^^
+TypeError: list indices must be integers or slices, not str

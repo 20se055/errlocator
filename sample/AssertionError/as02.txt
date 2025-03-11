@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/AssertionError/as02.py", line 6, in <module>
+    print(area_circle(x))
+          ^^^^^^^^^^^^^^
+  File "/home/sano_anju/errlocator/sample/AssertionError/as02.py", line 2, in area_circle
+    assert (r>=0), 'Radius Cannot be Less Than Zero!'
+            ^^^^
+AssertionError: Radius Cannot be Less Than Zero!

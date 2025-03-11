@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/TypeError/t03/03.py", line 19, in <module>
+    print(str(index) + '. ' + food.info())
+                              ^^^^^^^^^^^
+  File "/home/sano_anju/errlocator/sample/TypeError/t03/food.py", line 9, in info
+    return self.name + ': ¥' + self.price + ' (' + str(self.calorie) + 'kcal)'
+           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+TypeError: can only concatenate str (not "int") to str

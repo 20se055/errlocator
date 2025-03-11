@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/AttributeError/at02.py", line 2, in <module>
+    attack = random.randnt(1,7)
+             ^^^^^^^^^^^^^
+AttributeError: module 'random' has no attribute 'randnt'. Did you mean: 'randint'?

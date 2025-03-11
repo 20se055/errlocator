@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/TypeError/t07/t07.py", line 24, in <module>
+    name = nm.name_generator(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sano_anju/errlocator/sample/TypeError/t07/name_gen.py", line 6, in name_generator
+    ct_s = data["苗字"].count()
+           ~~~~^^^^^^
+TypeError: string indices must be integers, not 'str'

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/TypeError/t03.py", line 8, in <module>
+    print(sum(x))
+          ^^^^^^
+  File "/home/sano_anju/errlocator/sample/TypeError/t03.py", line 3, in sum
+    for i in range(1, n + 1):
+                      ~~^~~
+TypeError: can only concatenate str (not "int") to str

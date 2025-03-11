@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/IndexError/in01.py", line 3, in <module>
+    list1[i]=i
+    ~~~~~^^^
+IndexError: list assignment index out of range

@@ -1,0 +1,324 @@
+{    
+    "value1":{
+        "variable":{
+            "if":"ValueError: could not convert \\w+ to \\w+: '.+'",
+            "then":"extract_mnt_func_token",
+            "output":[
+                "value1_var_list",
+                "value1_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "value1_var_list"
+            ]
+        }
+    },
+
+    "value2":{
+        "variable":{
+            "if":"ValueError: invalid literal for int\\(\\) with base 10: '.+'",
+            "then":"extract_mnt_func_token",
+            "output":[
+                "value2_var_list",
+                "value2_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "value2_var_list"
+            ]
+        }
+    },
+
+    "value3":{
+        "variable":{
+            "if":"ValueError: math domain error",
+            "then":"extract_mnt_func_token",
+            "output":[
+                "value3_var_list",
+                "value3_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "value3_var_list"
+            ]
+        }
+    },
+    
+    "value4":{
+        "variable":{
+            "if":"ValueError: \\w+\\(\\) arg \\d+ must not be .+",
+            "then":"optional_argument",
+            "output":[
+                "value4_var_list",
+                "value4_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "value4_var_list"
+            ]
+        }
+    },
+
+    "value5":{
+        "variable":{
+            "if":"ValueError: not enough values to unpack \\(expected \\d+, got \\d+\\)",
+            "then":"all_argument",
+            "output":[
+                "value5_var_list",
+                "value5_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "value5_var_list"
+            ]
+        }
+    },
+
+    "type1":{
+        "variable":{
+            "if":"TypeError: list indices must be integers or slices, not \\w+",
+            "then":"strip_list_key",
+            "output":[
+                "type1_var_list",
+                "type1_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type1_var_list"
+            ]
+        }
+    },
+
+    "type2":{
+        "variable":{
+            "if":"TypeError: '\\w+' object is not subscriptable",
+            "then":"extract_mnt_token",
+            "output":[
+                "type2_var_list",
+                "type2_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type2_var_list"
+            ]
+        }
+    },
+
+    "type3":{
+        "variable":{
+            "if":"TypeError: can only concatenate \\w+ \\(not \"\\w+\"\\) to \\w",
+            "then":"extract_left_token",
+            "output":[
+                "type3_var_list",
+                "type3_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type3_var_list"
+            ]
+        }
+    },
+
+    "type4":{
+        "variable":{
+            "if":"TypeError: '\\w+' object cannot be interpreted as an integer",
+            "then":"find_arg",
+            "output":[
+                "type4_var_list",
+                "type4_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type4_var_list"
+            ]
+        }
+    },
+
+    "type5":{
+        "variable":{
+            "if":"TypeError: unhashable type: '\\w+'",
+            "then":"strip_list_key",
+            "output":[
+                "type5_var_list",
+                "type5_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type5_var_list"
+            ]
+        }
+    },
+
+    "type6":{
+        "variable":{
+            "if":"TypeError: \\w+ expected at most \\d+ argument, got \\d+",
+            "then":"find_arg",
+            "output":[
+                "type6_var_list",
+                "type6_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type6_var_list"
+            ]
+        }
+    },
+
+    "type7":{
+        "variable":{
+            "if":"TypeError: string indices must be integers, not 'str'",
+            "then":"extract_string_indices",
+            "output":[
+                "type7_var_list",
+                "type7_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type7_var_list"
+            ]
+        }
+    },
+
+    "type8":{
+        "variable":{
+            "if":"TypeError: unsupported operand type\\(s\\) for \\+: '\\w+' and '\\w+'",
+            "then":"extract_plus_token",
+            "output":[
+                "type8_var_list",
+                "type8_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "type8_var_list"
+            ]
+        }
+    },
+
+    "key1":{
+        "variable":{
+            "if":"KeyError: .+",
+            "then":"extract_dic_name_key",
+            "output":[
+                "key1_var_list",
+                "key1_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "key1_var_list"
+            ]
+        }
+    },
+
+    "syntax1":{
+        "variable":{
+            "if":"SyntaxError: invalid syntax",
+            "then":"extraxt_mnt_previous_token",
+            "output":[
+                "syntax1_var_list",
+                "syntax1_const_list"
+            ]
+        },
+        "related":{
+            "method":"no_analysis",
+            "params":[
+                "syntax1_var_list"
+            ]
+        }
+    },
+
+    "attribute1":{
+        "variable":{
+            "if":"AttributeError: '\\w+' object has no attribute '\\w+'",
+            "then":"extract_object",
+            "output":[
+                "attribute1_var_list",
+                "attribute1_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "attribute1_var_list"
+            ]
+        }
+    },
+
+    "attribute2":{
+        "variable":{
+            "if":"AttributeError: module '\\w+' has no attribute '\\w+'.*",
+            "then":"extract_mnt_token",
+            "output":[
+                "attribute2_var_list",
+                "attribute2_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "attribute2_var_list"
+            ]
+        }
+    },
+
+    "attribute3":{
+        "variable":{
+            "if":"AttributeError: partially initialized module '\\w+' has no attribute '\\w+'.*",
+            "then":"extract_file",
+            "output":[
+                "attribute3_var_list",
+                "attribute3_const_list"
+            ]
+        },
+        "related":{
+            "method":"no_analysis",
+            "params":[
+                "attribute3_var_list"
+            ]
+        }
+    },
+
+    "assertion1":{
+        "variable":{
+            "if":"AssertionError: .+",
+            "then":"extract_values",
+            "output":[
+                "assertion1_var_list",
+                "assertion1_const_list"
+            ]
+        },
+        "related":{
+            "method":"extract_related_locations",
+            "params":[
+                "assertion1_var_list"
+            ]
+        }
+    }
+}

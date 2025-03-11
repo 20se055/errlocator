@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/sano_anju/errlocator/sample/AttributeError/at01.py", line 2, in <module>
+    a.append(20)
+    ^^^^^^^^
+AttributeError: 'int' object has no attribute 'append'
