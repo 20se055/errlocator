@@ -39,7 +39,7 @@ Cause of error:
 162:
 163:   self.sites[site_name] = n
 164:     SiteInformation(site_name,
-165:       site_data[site_name] ["urlMain"],  #suspicious point
+165:       site_data[site_name]["urlMain"],  #suspicious point
 166:       site_data[site_name]["url"],
 167:       site_data[site_name]["username_claimed"],
 168:       site_data[site_name],
@@ -51,4 +51,4 @@ Cause of error:
 174:   # f"Problem parsing json contents at `data_file_path': Missing attribute error."
 175:   # )
 ```
-※実際には#suspicious pointと書いた箇所にマーカーが付いた状態で出力される
+※実際には`#suspicious point`と書いた箇所にマーカーが付いた状態で出力される
